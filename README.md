@@ -103,3 +103,6 @@ To capture failed login attempts, run as root or ensure the script has permissio
 ## 📄 License
 
 MIT License – feel free to use, modify, and contribute.
+
+---
+https://roadmap.sh/projects/server-stats
