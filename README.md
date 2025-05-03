@@ -59,28 +59,53 @@ chmod +x server-stat.sh
 ## 🖥️ Sample Output
 
 ```
-===== AWS Server Performance Stats =====
-Generated on: Sat May 3 12:00:00 UTC 2025
 ========================================
 
 --- CPU Usage ---
-CPU Usage: 14.5%
+CPU Usage: 100%
 
 --- Memory Usage ---
-              total        used        free
-Mem:           3.8G        1.2G        2.6G
-Used: 31.58%
+               total        used        free      shared  buff/cache   available
+Mem:           957Mi       317Mi       158Mi       896Ki       638Mi       639Mi
+Swap:             0B          0B          0B
+Used: 33.20%
 
 --- Disk Usage ---
-total        30G   10G   20G   33%
-Used: 33.00%
+total           8.5G  2.0G  6.4G  24% -
+Used: 24.00%
 
 --- Top 5 Processes by CPU Usage ---
-PID  COMMAND  %CPU
-...
+    PID COMMAND         %CPU
+   1147 sshd             0.1
+      1 systemd          0.0
+    591 snapd            0.0
+    949 amazon-ssm-agen  0.0
+    125 systemd-journal  0.0
+
+--- Top 5 Processes by Memory Usage ---
+    PID COMMAND         %MEM
+    591 snapd            3.3
+    183 multipathd       2.7
+    736 unattended-upgr  2.3
+    584 networkd-dispat  2.1
+    949 amazon-ssm-agen  1.9
+
+--- OS Version ---
+PRETTY_NAME="Ubuntu 24.04.2 LTS"
+
+--- Uptime ---
+up 37 minutes
+
+--- Load Average ---
+ 0.00, 0.00, 0.00
+
+--- Logged in Users ---
+ubuntu   pts/0        2025-05-03 07:08 (182.156.136.243)
+ubuntu   pts/1        2025-05-03 07:08 (182.156.136.243)
 
 --- Failed Login Attempts ---
 0
+
 ```
 
 ---
